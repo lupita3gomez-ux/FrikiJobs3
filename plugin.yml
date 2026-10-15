@@ -1,0 +1,16 @@
+name: JobsPlugin
+version: 1.0
+main: com.tuempresa.jobs.JobsPlugin
+api-version: '1.20'
+description: Plugin de empleos con Tiers, Vault y GUI interactivo
+author: TuNombre
+depend: [Vault]
+commands:
+  jobs:
+    description: Abre el menú principal de trabajos
+    permission: jobs.use
+    usage: /jobs
+permissions:
+  jobs.use:
+    description: Permite usar el menú de empleos
+    default: true

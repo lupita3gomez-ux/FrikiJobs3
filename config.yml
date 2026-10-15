@@ -1,0 +1,121 @@
+quit_penalty: 50.0
+
+jobs:
+  minero:
+    name: "Minero"
+    description: "Especializado en la extracción de minerales, excavación y procesamiento de rocas."
+    tiers:
+      TI:
+        required_xp: 0
+        reward_money: 0.2
+        reward_xp: 2
+        materials: ["STONE", "COAL_ORE", "DEEPSLATE_COAL_ORE"]
+        info: "Piedra y Carbón ($0.2 / 2 XP)"
+      TII:
+        required_xp: 500
+        reward_money: 0.8
+        reward_xp: 5
+        materials: ["IRON_ORE", "DEEPSLATE_IRON_ORE", "COPPER_ORE", "DEEPSLATE_COPPER_ORE"]
+        info: "Hierro y Cobre ($0.8 / 5 XP)"
+      TIII:
+        required_xp: 1500
+        reward_money: 1.5
+        reward_xp: 10
+        materials: ["REDSTONE_ORE", "DEEPSLATE_REDSTONE_ORE", "LAPIS_ORE", "DEEPSLATE_LAPIS_ORE"]
+        info: "Redstone y Lapislázuli ($1.5 / 10 XP) - Desbloquea Prisa Minera I"
+      TIV:
+        required_xp: 3500
+        reward_money: 3.0
+        reward_xp: 20
+        materials: ["GOLD_ORE", "DEEPSLATE_GOLD_ORE"]
+        info: "Oro ($3.0 / 20 XP)"
+      TV:
+        required_xp: 7000
+        reward_money: 6.0
+        reward_xp: 40
+        materials: ["DIAMOND_ORE", "DEEPSLATE_DIAMOND_ORE"]
+        info: "Diamante ($6.0 / 40 XP) - Desbloquea Prisa Minera II"
+      TVI:
+        required_xp: 15000
+        reward_money: 12.0
+        reward_xp: 80
+        materials: ["EMERALD_ORE", "DEEPSLATE_EMERALD_ORE"]
+        info: "Esmeralda ($12.0 / 80 XP)"
+      TVII:
+        required_xp: 30000
+        reward_money: 25.0
+        reward_xp: 150
+        materials: ["ANCIENT_DEBRIS"]
+        info: "Netherite Debris ($25.0 / 150 XP) - Desbloquea Prisa Minera III & Pico 3x3"
+
+  granjero:
+    name: "Granjero"
+    description: "Especializado en cultivos, automatización agrícola y compostaje."
+    tiers:
+      TI: { required_xp: 0, reward_money: 0.1, reward_xp: 1, info: "Bayas ($0.1 / 1 XP)" }
+      TII: { required_xp: 400, reward_money: 0.3, reward_xp: 3, info: "Remolacha y Trigo ($0.3 / 3 XP)" }
+      TIII: { required_xp: 1200, reward_money: 0.7, reward_xp: 6, info: "Zanahorias y Papas ($0.7 / 6 XP)" }
+      TIV: { required_xp: 2800, reward_money: 1.2, reward_xp: 12, info: "Sandías y Calabazas ($1.2 / 12 XP)" }
+      TV: { required_xp: 6000, reward_money: 2.5, reward_xp: 25, info: "Remolacha y Cacao ($2.5 / 25 XP)" }
+      TVI: { required_xp: 12000, reward_money: 5.0, reward_xp: 50, info: "Verruga del Nether ($5.0 / 50 XP)" }
+      TVII: { required_xp: 25000, reward_money: 15.0, reward_xp: 100, info: "Chorus Fruit ($15.0 / 100 XP) - Desbloquea Azada Auto-Replantado" }
+
+  hechicero:
+    name: "Encantador / Hechicero"
+    description: "Especializado en el manejo de experiencia, alteración de ítems y magia."
+    tiers:
+      TI: { required_xp: 0, reward_money: 2.0, reward_xp: 5, info: "Puntos de Experiencia ($2 / 5 XP)" }
+      TII: { required_xp: 500, reward_money: 10.0, reward_xp: 15, info: "Gastar Lapislázuli ($10 / 15 XP)" }
+      TIII: { required_xp: 1500, reward_money: 25.0, reward_xp: 30, info: "Libros Encantados I-II ($25 / 30 XP)" }
+      TIV: { required_xp: 3500, reward_money: 50.0, reward_xp: 60, info: "Libros Encantados II-III ($50 / 60 XP)" }
+      TV: { required_xp: 7000, reward_money: 75.0, reward_xp: 120, info: "Libros Encantados III-IV ($75 / 120 XP)" }
+      TVI: { required_xp: 14000, reward_money: 100.0, reward_xp: 250, info: "Libros Encantados IV-V ($100 / 250 XP)" }
+      TVII: { required_xp: 28000, reward_money: 125.0, reward_xp: 500, info: "Libros Encantados V-VI ($125 / 500 XP) - Desbloquea Desencantar" }
+
+  pescador:
+    name: "Pescador"
+    description: "Especializado en pesca marina, tesoros submarinos y especies raras."
+    tiers:
+      TI: { required_xp: 0, reward_money: 0.5, reward_xp: 5, info: "Bacalao y Salmón ($0.5 / 5 XP)" }
+      TII: { required_xp: 400, reward_money: 1.2, reward_xp: 12, info: "Pez Payaso ($1.2 / 12 XP)" }
+      TIII: { required_xp: 1000, reward_money: 5.0, reward_xp: 25, info: "Pez Globo ($5 / 25 XP)" }
+      TIV: { required_xp: 2500, reward_money: 15.0, reward_xp: 50, info: "Items T2 ($15 / 50 XP)" }
+      TV: { required_xp: 5000, reward_money: 25.0, reward_xp: 100, info: "Items T3 ($25 / 100 XP)" }
+      TVI: { required_xp: 10000, reward_money: 45.0, reward_xp: 200, info: "Libros Encantados ($45 / 200 XP)" }
+      TVII: { required_xp: 20000, reward_money: 500.0, reward_xp: 450, info: "Reparar con Caña ($500 / 450 XP)" }
+
+  guerrero:
+    name: "Guerrero"
+    description: "Especializado en combate PVE/PVP y eliminación de mobs hostiles."
+    tiers:
+      TI: { required_xp: 0, reward_money: 0.4, reward_xp: 4, info: "Zombies y Esqueletos ($0.4 / 4 XP)" }
+      TII: { required_xp: 500, reward_money: 0.8, reward_xp: 8, info: "Arañas y Creepers ($0.8 / 8 XP)" }
+      TIII: { required_xp: 1500, reward_money: 1.8, reward_xp: 18, info: "Piglins y Blazes ($1.8 / 18 XP)" }
+      TIV: { required_xp: 3500, reward_money: 3.5, reward_xp: 35, info: "Endermans y Wither Skeletons ($3.5 / 35 XP)" }
+      TV: { required_xp: 7000, reward_money: 7.0, reward_xp: 70, info: "Guardianes y Evocadores ($7 / 70 XP)" }
+      TVI: { required_xp: 15000, reward_money: 15.0, reward_xp: 150, info: "Mini-Bosses y Ravagers ($15 / 150 XP)" }
+      TVII: { required_xp: 30000, reward_money: 40.0, reward_xp: 400, info: "Jugadores / Bosses ($40 / 400 XP)" }
+
+  lenador:
+    name: "Leñador"
+    description: "Especializado en la tala masiva de madera y deforestación eficiente."
+    tiers:
+      TI: { required_xp: 0, reward_money: 0.2, reward_xp: 2, info: "Abeto y Jungla ($0.2 / 2 XP)" }
+      TII: { required_xp: 400, reward_money: 0.5, reward_xp: 5, info: "Roble Oscuro y Pálido ($0.5 / 5 XP)" }
+      TIII: { required_xp: 1200, reward_money: 1.0, reward_xp: 10, info: "Abedul y Roble ($1.0 / 10 XP)" }
+      TIV: { required_xp: 2500, reward_money: 2.0, reward_xp: 20, info: "Acacia ($2.0 / 20 XP)" }
+      TV: { required_xp: 5500, reward_money: 4.0, reward_xp: 40, info: "Manglar y Cerezo ($4.0 / 40 XP)" }
+      TVI: { required_xp: 11000, reward_money: 8.0, reward_xp: 80, info: "Árboles Champiñón ($8.0 / 80 XP)" }
+      TVII: { required_xp: 22000, reward_money: 20.0, reward_xp: 200, info: "Carmesí y Distorsionado ($20 / 200 XP) - TreeCapitator" }
+
+  alquimista:
+    name: "Alquimista"
+    description: "Especializado en destilación y transmutación de elementos."
+    tiers:
+      TI: { required_xp: 0, reward_money: 5.0, reward_xp: 8, info: "Pociones básicas ($5 / 8 XP)" }
+      TII: { required_xp: 500, reward_money: 30.0, reward_xp: 18, info: "Velocidad, Veneno, Vida ($30 / 18 XP)" }
+      TIII: { required_xp: 1500, reward_money: 60.0, reward_xp: 40, info: "Salto, Visión, Fuerza ($60 / 40 XP)" }
+      TIV: { required_xp: 3500, reward_money: 90.0, reward_xp: 80, info: "Daño, Invisibilidad ($90 / 80 XP)" }
+      TV: { required_xp: 7000, reward_money: 25.0, reward_xp: 150, info: "Mejorar Duración/Nivel ($25 / 150 XP)" }
+      TVI: { required_xp: 15000, reward_money: 200.0, reward_xp: 300, info: "Maestro Tortuga ($200 / 300 XP)" }
+      TVII: { required_xp: 30000, reward_money: 250.0, reward_xp: 600, info: "Lingering Potions ($250 / 600 XP)" }
